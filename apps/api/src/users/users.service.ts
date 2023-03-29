@@ -21,7 +21,9 @@ export class UsersService {
       ...createUserInput,
       id: this.users.length + 1,
     };
-    return this.users.push(user);
+
+    this.users.push(user);
+    return user;
   }
 
   findAll() {
