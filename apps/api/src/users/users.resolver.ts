@@ -8,6 +8,7 @@ export class UsersResolver {
 
   @Query(() => [User], { name: 'users' })
   findAll() {
+    // TODO: protect with JWT
     return this.usersService.findAll();
   }
 
