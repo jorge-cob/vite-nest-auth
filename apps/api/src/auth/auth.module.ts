@@ -13,7 +13,7 @@ import { UsersModule } from '../users/users.module';
     UsersModule,
     JwtModule.register({
       signOptions: { expiresIn: '60s' },
-      secret: 'hide-me', // TODO: process.env.JWT_SECRET,
+      secret: process.env.API_JWT_SECRET, // TODO: process.env.JWT_SECRET,
     }),
   ],
   providers: [AuthService, AuthResolver, LocalStrategy, JwtStrategy],

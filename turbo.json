@@ -8,6 +8,7 @@
       "dependsOn": [
         "^build"
       ],
+      "env": ["API_JWT_SECRET"],
       "outputs":[
         "dist/**"
       ]
