@@ -1,10 +1,8 @@
-import { useEffect, useState } from 'react'
-import './App.css'
-
+import { useEffect, useState } from 'react';
+import './App.css';
 
 function App() {
-  const [greeting, setGreeting] = useState('')
-
+  const [greeting, setGreeting] = useState('');
 
   useEffect(() => {
     fetch('/api')
@@ -12,17 +10,16 @@ function App() {
       .then(setGreeting)
   }, []);
 
-
   return (
     <div className="App">
       <div>
       </div>
-      <h1>{greeting}</h1>
+      <h1>hello</h1>
       <div>
-
+        Please log in
       </div>
     </div>
   )
-}
+};
 
-export default App
+export default App;
